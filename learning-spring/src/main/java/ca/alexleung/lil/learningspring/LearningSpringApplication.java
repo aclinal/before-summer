@@ -1,6 +1,10 @@
 package ca.alexleung.lil.learningspring;
 
+import ca.alexleung.lil.learningspring.data.entity.Guest;
+import ca.alexleung.lil.learningspring.data.entity.Reservation;
 import ca.alexleung.lil.learningspring.data.entity.Room;
+import ca.alexleung.lil.learningspring.data.repository.GuestRepository;
+import ca.alexleung.lil.learningspring.data.repository.ReservationRepository;
 import ca.alexleung.lil.learningspring.data.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -25,6 +29,30 @@ public class LearningSpringApplication {
         @GetMapping
         public Iterable<Room> getRooms() {
             return this.roomRepository.findAll();
+        }
+    }
+
+    @RestController
+    @RequestMapping("/guests")
+    public class GuestController {
+        @Autowired
+        private GuestRepository guestRepository;
+
+        @GetMapping
+        public Iterable<Guest> getGuests() {
+            return this.guestRepository.findAll();
+        }
+    }
+
+    @RestController
+    @RequestMapping("/reservations")
+    public class ReservationController {
+        @Autowired
+        private ReservationRepository reservationRepository;
+
+        @GetMapping
+        public Iterable<Reservation> getReservations() {
+            return this.reservationRepository.findAll();
         }
     }
 

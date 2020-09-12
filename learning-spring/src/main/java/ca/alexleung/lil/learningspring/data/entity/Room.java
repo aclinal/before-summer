@@ -3,20 +3,20 @@ package ca.alexleung.lil.learningspring.data.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name="ROOM")
+@Table(name = "ROOM")
 public class Room {
     @Id
-    @Column(name="ROOM_ID")
+    @Column(name = "ROOM_ID")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long roomId;
 
-    @Column(name="NAME")
+    @Column(name = "NAME")
     private String roomName;
 
-    @Column(name="ROOM_NUMBER")
+    @Column(name = "ROOM_NUMBER")
     private String roomNumber;
 
-    @Column(name="BED_INFO")
+    @Column(name = "BED_INFO")
     private String bedInfo;
 
     public long getRoomId() {
