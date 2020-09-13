@@ -10,10 +10,7 @@ import ca.alexleung.lil.learningspring.data.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -55,6 +52,7 @@ public class ReservationService {
         });
 
         return roomReservationMap.values().stream()
+                .sorted(Comparator.comparing(RoomReservation::getRoomName).thenComparing(RoomReservation::getRoomNumber))
                 .collect(Collectors.toList());
     }
 }
