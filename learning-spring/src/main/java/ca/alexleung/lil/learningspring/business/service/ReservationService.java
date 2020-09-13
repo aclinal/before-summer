@@ -44,7 +44,7 @@ public class ReservationService {
         });
 
         // Stuff extra info for each reservation.
-        Iterable<Reservation> reservations = reservationRepository.findReservationByReservationDate(new java.sql.Date(date.getTime()));
+        Iterable<Reservation> reservations = reservationRepository.findReservationByResDate(new java.sql.Date(date.getTime()));
         reservations.forEach(reservation -> {
             RoomReservation roomReservation = roomReservationMap.get(reservation.getRoomId());
             roomReservation.setDate(date);
