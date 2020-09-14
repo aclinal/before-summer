@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @Service
 public class ReservationService {
@@ -53,6 +54,12 @@ public class ReservationService {
 
         return roomReservationMap.values().stream()
                 .sorted(Comparator.comparing(RoomReservation::getRoomName).thenComparing(RoomReservation::getRoomNumber))
+                .collect(Collectors.toList());
+    }
+
+    public List<Guest> getGuests() {
+        return StreamSupport.stream(guestRepository.findAll().spliterator(), false)
+                .sorted(Comparator.comparing(Guest::getLastName).thenComparing(Guest::getFirstName))
                 .collect(Collectors.toList());
     }
 }
