@@ -1,13 +1,13 @@
-package ca.alexleung.lil.learningspring;
+package ca.alexleung.hotel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LearningSpringApplication {
+public class HotelApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(LearningSpringApplication.class, args);
+        SpringApplication.run(HotelApplication.class, args);
     }
 
 }

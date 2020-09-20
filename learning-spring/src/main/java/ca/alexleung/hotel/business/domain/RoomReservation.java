@@ -1,4 +1,4 @@
-package ca.alexleung.lil.learningspring.business.domain;
+package ca.alexleung.hotel.business.domain;
 
 import java.util.Date;
 

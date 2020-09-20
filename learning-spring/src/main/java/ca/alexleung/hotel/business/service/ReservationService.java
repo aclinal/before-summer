@@ -1,12 +1,12 @@
-package ca.alexleung.lil.learningspring.business.service;
+package ca.alexleung.hotel.business.service;
 
-import ca.alexleung.lil.learningspring.business.domain.RoomReservation;
-import ca.alexleung.lil.learningspring.data.entity.Guest;
-import ca.alexleung.lil.learningspring.data.entity.Reservation;
-import ca.alexleung.lil.learningspring.data.entity.Room;
-import ca.alexleung.lil.learningspring.data.repository.GuestRepository;
-import ca.alexleung.lil.learningspring.data.repository.ReservationRepository;
-import ca.alexleung.lil.learningspring.data.repository.RoomRepository;
+import ca.alexleung.hotel.business.domain.RoomReservation;
+import ca.alexleung.hotel.data.entity.Guest;
+import ca.alexleung.hotel.data.entity.Reservation;
+import ca.alexleung.hotel.data.entity.Room;
+import ca.alexleung.hotel.data.repository.GuestRepository;
+import ca.alexleung.hotel.data.repository.ReservationRepository;
+import ca.alexleung.hotel.data.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

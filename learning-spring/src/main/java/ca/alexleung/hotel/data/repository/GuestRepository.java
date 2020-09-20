@@ -1,6 +1,6 @@
-package ca.alexleung.lil.learningspring.data.repository;
+package ca.alexleung.hotel.data.repository;
 
-import ca.alexleung.lil.learningspring.data.entity.Guest;
+import ca.alexleung.hotel.data.entity.Guest;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

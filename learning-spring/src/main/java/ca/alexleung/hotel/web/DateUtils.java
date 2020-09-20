@@ -1,4 +1,4 @@
-package ca.alexleung.lil.learningspring.web;
+package ca.alexleung.hotel.web;
 
 import java.text.DateFormat;
 import java.text.ParseException;

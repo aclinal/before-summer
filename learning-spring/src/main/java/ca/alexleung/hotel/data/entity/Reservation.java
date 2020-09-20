@@ -1,4 +1,4 @@
-package ca.alexleung.lil.learningspring.data.entity;
+package ca.alexleung.hotel.data.entity;
 
 import javax.persistence.*;
 import java.util.Date;

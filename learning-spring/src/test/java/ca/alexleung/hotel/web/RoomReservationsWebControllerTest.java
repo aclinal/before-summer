@@ -1,7 +1,7 @@
-package ca.alexleung.lil.learningspring.web;
+package ca.alexleung.hotel.web;
 
-import ca.alexleung.lil.learningspring.business.domain.RoomReservation;
-import ca.alexleung.lil.learningspring.business.service.ReservationService;
+import ca.alexleung.hotel.business.domain.RoomReservation;
+import ca.alexleung.hotel.business.service.ReservationService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

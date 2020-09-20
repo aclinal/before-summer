@@ -1,10 +1,10 @@
-package ca.alexleung.lil.learningspring;
+package ca.alexleung.hotel;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LearningSpringApplicationTests {
+class HotelApplicationTests {
 
 	@Test
 	void contextLoads() {

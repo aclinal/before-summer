@@ -1,7 +1,7 @@
-package ca.alexleung.lil.learningspring.web;
+package ca.alexleung.hotel.web;
 
-import ca.alexleung.lil.learningspring.business.service.ReservationService;
-import ca.alexleung.lil.learningspring.data.entity.Guest;
+import ca.alexleung.hotel.business.service.ReservationService;
+import ca.alexleung.hotel.data.entity.Guest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
