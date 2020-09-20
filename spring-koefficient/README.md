@@ -2,14 +2,14 @@
 
 LinkedIn Learning: Spring Boot Essentials, using Kotlin and Gradle.
 
-## Building
+## Build and Test
 
 From the root directory:
 
-`./gradlew clean bootJar`
+`./gradlew clean test bootJar`
 
-## Running
+## Run Locally
 
 After building:
 
-`java -jar ./build/libs/spring-koefficient-0.0.1-SNAPSHOT.jar`
+`java -jar -Dspring.profiles.active=dev ./build/libs/spring-koefficient-0.0.1-SNAPSHOT.jar`
